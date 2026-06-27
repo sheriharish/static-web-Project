@@ -5,7 +5,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Step 3: Remove default Nginx static assets (optional but clean)
-RUN rm -rf ./*
+#RUN rm -rf ./*
 
 # Step 4: Copy all static files and folders from your repository to the container
 COPY index.html ./
